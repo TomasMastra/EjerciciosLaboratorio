@@ -8,16 +8,17 @@
 #include <stdlib.h>
 
 int main (void)	{ //Mastrapasqua Tomas
-	setbuf(stdout,NULL);
+
+  setbuf(stdout,NULL);
   int numero;
-  int contadorNumeros;
+  int i;
   float promedio;
   float suma;
 
-  contadorNumeros = 0;
+  i = 0;
   suma = 0;
 
-  for (contadorNumeros = 0; contadorNumeros < 5; contadorNumeros++)
+  for (i = 0; i < 7; i++)
     {
       printf ("Ingrese un numero negativo: ");
       scanf("%d", &numero);
@@ -32,26 +33,12 @@ int main (void)	{ //Mastrapasqua Tomas
 
     }
 
-  promedio = suma / contadorNumeros;
-  //promedio= (float)suma/contadorNumeros;  Otra forma de buscar promedio
+  promedio = suma / i;
   printf ("El promedio es: %.2f", promedio);	//cantidad decimales despues de la coma %.5f
 
 
 
-
-
-
-  /*
-     int=int/int
-     parseo=convertir una cadena a un valor numerico
-
-     casting o casteo= convertir un tipo numerico a otro tipo numerico
-
-
-   */
-
-
-  return 0;
+  return EXIT_SUCCESS;
 }
 
 
