@@ -23,7 +23,8 @@ int main(void) {
 
 	for(i=0;i<5;i++)
 	{
-		printf("Ingresar un caracter: ");//hay error
+		printf("Ingresar un caracter: ");
+		fflush(stdin);
 		scanf("%c", &letra);
 
 
